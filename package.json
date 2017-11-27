@@ -1,0 +1,17 @@
+{
+  "name": "typescript-migration-transformers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Poindexter <dp.texas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.12.1",
+    "glob": "^7.1.2",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.3"
+  }
+}
