@@ -26,12 +26,13 @@ module.exports = function({ types: t }) {
         if (
           !t.isFunction(path.node.init) ||
           !t.isIdentifier(path.node.id) ||
-          !duckTypesAsSFC(t, path.scope.getBinding(path.node.id.name))
+          !duckTypesAsSFC(t, path.scope.getBinding(path.node.id.name)) ||
+          path.node.id.typeAnnotation
         ) {
           return;
         }
 
-        path.node.init.returnType = t.tSTypeAnnotation(
+        path.node.id.typeAnnotation = t.tSTypeAnnotation(
           t.tSTypeReference(
             t.tSQualifiedName(t.identifier('React'), t.identifier('SFC')),
             t.tSTypeParameterInstantiation([t.tSAnyKeyword()])

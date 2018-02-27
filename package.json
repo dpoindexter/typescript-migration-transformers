@@ -1,7 +1,6 @@
 {
   "name": "typescript-migration-transformers",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Daniel Poindexter <dp.texas@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -10,9 +9,5 @@
     "commander": "^2.12.1",
     "glob": "^7.1.2"
   },
-  "devDependencies": {
-    "@types/babel-core": "^6.25.3",
-    "@types/babel-traverse": "^6.25.3",
-    "@types/babel-types": "^6.25.2"
-  }
+  "devDependencies": {}
 }
